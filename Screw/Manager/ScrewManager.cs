@@ -10,7 +10,7 @@ using System;
 
 namespace Screw.Manager
 {
-    class ScrewManager : ErrorObjCreation, IBuildable
+    public class ScrewManager : ErrorObjCreation, IBuildable
     {
         /// <summary>
         /// Kompas application

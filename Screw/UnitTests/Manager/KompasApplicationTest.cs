@@ -13,15 +13,17 @@ namespace Screw.UnitTests.Manager
 	/// Class for test KompasApplication
 	/// </summary>
 	[TestFixture]
-    class KompasApplicationTest
+    public class KompasApplicationTest
     {
         /// <summary>
         /// Construct kompas application
         /// </summary>
         /// <param name="res">Ожидаемый результат</param>
         /// <param name="parameters">Parameters for build</param>
-        [TestCase(ErrorCodes.OK, 27, 5, 25, 64, 10, 5, TestName = "ConstructKompasApplication, нормальные параметры")]
-        public void TestConstructKompasApplication(ErrorCodes res, params double[] parameters)
+        [TestCase(ErrorCodes.OK, 27, 5, 25, 64, 10, 5, 
+            TestName = "ConstructKompasApplication, нормальные параметры")]
+        public void TestConstructKompasApplication(
+            ErrorCodes res, params double[] parameters)
         {
             var figureParameters = new List<double>();
             for (int i = 0, length = parameters.Length; i < length; i++)

@@ -45,7 +45,6 @@ namespace Screw
 
             SetAllInputsEnabledState(false);
 
-            // Set culture info for current thread
             Thread.CurrentThread.CurrentCulture = CultureInfo.InvariantCulture;
         }
 
@@ -187,8 +186,6 @@ namespace Screw
             throw new ArgumentException(
                 "Screwdriver is not checked in list of screwdriver types.");
         }
-
-
 
         /// <summary>
         ///Проверка пользовательских параметров ввода и построение фигуры после этого
